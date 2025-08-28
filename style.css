@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+/* 基本設定 */
+html {
+	font-family: sans-serif;
+}
+
+html * {
+	box-sizing: border-box;
+}
+
+
+/* ページ全体の設定 */
+body {
+	font-size: 16px;		/* 文字サイズ */
+	background-color: #eeece9;	/* 背景色 */
+	color:	#000000;		/* 文字の色 */
+	margin:	0 0 0 0;		/* 余白（変えなくてよい） */
+}
+
+.wrapper {
+	margin:	0 auto 0 auto;		/* 余白（変えなくてよい） */
+	max-width: 960px;		/* 最大表示幅（変えなくてよい） */
+}
+
+
+/* 見出しh2 */
+h2 {
+	color: #3f5170;			/* 文字の色（★変えてみよう！） */
+	font-size: 22px;		/* 文字サイズ */
+	border-bottom: 3px dotted #3f5170;	/* 文字下の線（★変えてみよう！） */
+	margin: 30px 0px 20px 0px;	/* 外側の余白（★変えてみよう！） */
+	padding: 5px;			/* 内側の余白（★変えてみよう！） */
+}
+
+
+/* 見出しh3 */
+h3 {
+	color: #3f5170;			/* 文字の色（★変えてみよう！） */
+	font-size: 18px;		/* 文字サイズ */
+	border-left: 3px solid #3f5170;	/* 文字下の線（★変えてみよう！） */
+	margin: 30px 0 5px 0;		/* 外側の余白（★変えてみよう！） */
+	padding: 5px;			/* 内側の余白（★変えてみよう！） */
+}
+
+
+/* 本文 */
+p {
+	line-height: 1.6;		/* 本文の行間 */;
+}
+
+
+/* リンク */
+a:link {
+	color: #d25833;			/* リンクの色（★変えてみよう！） */
+}
+a:visited {
+	color: #d25833;			/* 一度クリックしたことのあるリンクの色（リンクの色と同じでよい） */
+}
+a:hover {
+	color: #e3937a;			/* リンクにマウスカーソルを乗せた時の色（★変えてみよう！） */
+}
+
+
+/*  ヘッダー  */
+.logo {
+	margin: 50px 0 40px 0;		/* ロゴ画像周りの余白（★変えてみよう！） */
+	line-height: 0;			/* （変えなくてよい） */
+	text-align: center;		/* ロゴの位置（centerは中央揃え） */
+
+}
+
+
+/*  フッター  */
+.footer {
+	font-size: 12px;	/* copyrightクレジットの文字サイズ */
+	color: #3f5170;		/* クレジットの文字の色 */
+	margin-top: 30px;	/* 外側余白（上のみ） */
+	padding: 80px 15px 20px 15px;		/* 内側余白 */
+	background-image: url(../images/footer-bg.png);	/* 背景画像（家マーク。いらなければ消す） */
+	background-repeat: no-repeat;	/* 背景画像を繰り返さない設定 */
+}
+
+
+/* 商品写真＋回り込み */
+.shop-photo {
+	float: left;			/* 文字を画像の隣に回り込ませる設定 */
+	padding: 0 1em 1em 0;		/* 文字と画像との余白 */
+}
+
+
+/* 回り込み解除 */
+.clear {
+	clear: both;			/* 重要 */
+}
+
+
+
+/* テーブル */
+.info {
+	border-collapse: collapse;
+}
+.info th, .info td {
+	padding: 8px;
+	border: 1px solid #bec2c7;
+	text-align: left;
+}
+.info th {
+	background-color: #dde2ea;
+	width: 90px;
+	color: #3f5170;
+	vertical-align: top;
+}
+
+
+
+/* スマホ向け（レスポンシブ対応） */
+
+/* 画面幅に合わせた画像伸縮 */
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* メディアクエリ：ブレイクポイント767px */
+@media (max-width: 767px) {
+
+	/* 基本文字サイズをやや小さめに */
+	body {
+		font-size: 15px;
+	}
+
+	/* 全体の左右に余白 */
+	.wrapper {
+		margin: 0 15px;
+	}
+	/* ロゴを小さめに */
+	.logo {
+		margin: 30px 0;
+	}
+	.logo img {
+		width: 200px;
+	}	
+	
+	/* 見出しh2を小さめに */
+	h2 {
+		font-size: 20px;
+	}
+
+	/* 見出しh3を小さめに */
+	h3 {
+		font-size: 16px;
+	}
+
+	
+	/* テキストの回り込みを解除 */
+	.shop-photo {
+		float: none;
+		padding: 0;
+	}
+	.clear {
+		clear: none;
+	}
+
+
+}
