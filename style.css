@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/* ��{�ݒ� */
+/* 基本設定 */
 html {
 	font-family: sans-serif;
 }
@@ -9,94 +9,102 @@ html * {
 	box-sizing: border-box;
 }
 
+/* Google Fonts */
+.zen-kaku-gothic-new-regular {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-/* �y�[�W�S�̂̐ݒ� */
+
+/* ページ全体の設定 */
 body {
-	font-size: 16px;		/* �����T�C�Y */
-	background-color: #eeece9;	/* �w�i�F */
-	color:	#000000;		/* �����̐F */
-	margin:	0 0 0 0;		/* �]���i�ς��Ȃ��Ă悢�j */
+	font-size: 16px;		/* 文字サイズ */
+	background-color: #eeece9;	/* 背景色 */
+	color:	#000000;		/* 文字の色 */
+	margin:	0 0 0 0;		/* 余白（変えなくてよい） */
+	font-family: "Zen Kaku Gothic New";
 }
 
 .wrapper {
-	margin:	0 auto 0 auto;		/* �]���i�ς��Ȃ��Ă悢�j */
-	max-width: 960px;		/* �ő�\�����i�ς��Ȃ��Ă悢�j */
+	margin:	0 auto 0 auto;		/* 余白（変えなくてよい） */
+	max-width: 960px;		/* 最大表示幅（変えなくてよい） */
 }
 
 
-/* ���o��h2 */
+/* 見出しh2 */
 h2 {
-	color: #3f5170;			/* �����̐F�i���ς��Ă݂悤�I�j */
-	font-size: 22px;		/* �����T�C�Y */
-	border-bottom: 3px dotted #3f5170;	/* �������̐��i���ς��Ă݂悤�I�j */
-	margin: 30px 0px 20px 0px;	/* �O���̗]���i���ς��Ă݂悤�I�j */
-	padding: 5px;			/* �����̗]���i���ς��Ă݂悤�I�j */
+	color: #3f5170;			/* 文字の色（★変えてみよう！） */
+	font-size: 22px;		/* 文字サイズ */
+	border-bottom: 3px dotted #3f5170;	/* 文字下の線（★変えてみよう！） */
+	margin: 30px 0px 20px 0px;	/* 外側の余白（★変えてみよう！） */
+	padding: 5px;			/* 内側の余白（★変えてみよう！） */
 }
 
 
-/* ���o��h3 */
+/* 見出しh3 */
 h3 {
-	color: #3f5170;			/* �����̐F�i���ς��Ă݂悤�I�j */
-	font-size: 18px;		/* �����T�C�Y */
-	border-left: 3px solid #3f5170;	/* �������̐��i���ς��Ă݂悤�I�j */
-	margin: 30px 0 5px 0;		/* �O���̗]���i���ς��Ă݂悤�I�j */
-	padding: 5px;			/* �����̗]���i���ς��Ă݂悤�I�j */
+	color: #3f5170;			/* 文字の色（★変えてみよう！） */
+	font-size: 18px;		/* 文字サイズ */
+	border-left: 3px solid #3f5170;	/* 文字下の線（★変えてみよう！） */
+	margin: 30px 0 5px 0;		/* 外側の余白（★変えてみよう！） */
+	padding: 5px;			/* 内側の余白（★変えてみよう！） */
 }
 
 
-/* �{�� */
+/* 本文 */
 p {
-	line-height: 1.6;		/* �{���̍s�� */;
+	line-height: 1.6;		/* 本文の行間 */;
 }
 
 
-/* �����N */
+/* リンク */
 a:link {
-	color: #d25833;			/* �����N�̐F�i���ς��Ă݂悤�I�j */
+	color: #d25833;			/* リンクの色（★変えてみよう！） */
 }
 a:visited {
-	color: #d25833;			/* ��x�N���b�N�������Ƃ̂��郊���N�̐F�i�����N�̐F�Ɠ����ł悢�j */
+	color: #d25833;			/* 一度クリックしたことのあるリンクの色（リンクの色と同じでよい） */
 }
 a:hover {
-	color: #e3937a;			/* �����N�Ƀ}�E�X�J�[�\�����悹�����̐F�i���ς��Ă݂悤�I�j */
+	color: #e3937a;			/* リンクにマウスカーソルを乗せた時の色（★変えてみよう！） */
 }
 
 
-/*  �w�b�_�[  */
+/*  ヘッダー  */
 .logo {
-	margin: 50px 0 40px 0;		/* ���S�摜����̗]���i���ς��Ă݂悤�I�j */
-	line-height: 0;			/* �i�ς��Ȃ��Ă悢�j */
-	text-align: center;		/* ���S�̈ʒu�icenter�͒��������j */
+	margin: 50px 0 40px 0;		/* ロゴ画像周りの余白（★変えてみよう！） */
+	line-height: 0;			/* （変えなくてよい） */
+	text-align: center;		/* ロゴの位置（centerは中央揃え） */
 
 }
 
 
-/*  �t�b�^�[  */
+/*  フッター  */
 .footer {
-	font-size: 12px;	/* copyright�N���W�b�g�̕����T�C�Y */
-	color: #3f5170;		/* �N���W�b�g�̕����̐F */
-	margin-top: 30px;	/* �O���]���i��̂݁j */
-	padding: 80px 15px 20px 15px;		/* �����]�� */
-	background-image: url(../images/footer-bg.png);	/* �w�i�摜�i�ƃ}�[�N�B����Ȃ���Ώ����j */
-	background-repeat: no-repeat;	/* �w�i�摜���J��Ԃ��Ȃ��ݒ� */
+	font-size: 12px;	/* copyrightクレジットの文字サイズ */
+	color: #3f5170;		/* クレジットの文字の色 */
+	margin-top: 30px;	/* 外側余白（上のみ） */
+	padding: 80px 15px 20px 15px;		/* 内側余白 */
+	background-image: url(../images/footer-bg.png);	/* 背景画像（家マーク。いらなければ消す） */
+	background-repeat: no-repeat;	/* 背景画像を繰り返さない設定 */
 }
 
 
-/* ���i�ʐ^�{��荞�� */
+/* 商品写真＋回り込み */
 .shop-photo {
-	float: left;			/* �������摜�ׂ̗ɉ�荞�܂���ݒ� */
-	padding: 0 1em 1em 0;		/* �����Ɖ摜�Ƃ̗]�� */
+	float: left;			/* 文字を画像の隣に回り込ませる設定 */
+	padding: 0 1em 1em 0;		/* 文字と画像との余白 */
 }
 
 
-/* ��荞�݉��� */
+/* 回り込み解除 */
 .clear {
-	clear: both;			/* �d�v */
+	clear: both;			/* 重要 */
 }
 
 
 
-/* �e�[�u�� */
+/* テーブル */
 .info {
 	border-collapse: collapse;
 }
@@ -114,27 +122,27 @@ a:hover {
 
 
 
-/* �X�}�z�����i���X�|���V�u�Ή��j */
+/* スマホ向け（レスポンシブ対応） */
 
-/* ��ʕ��ɍ��킹���摜�L�k */
+/* 画面幅に合わせた画像伸縮 */
 img {
 	max-width: 100%;
 	height: auto;
 }
 
-/* ���f�B�A�N�G���F�u���C�N�|�C���g767px */
+/* メディアクエリ：ブレイクポイント767px */
 @media (max-width: 767px) {
 
-	/* ��{�����T�C�Y����⏬���߂� */
+	/* 基本文字サイズをやや小さめに */
 	body {
 		font-size: 15px;
 	}
 
-	/* �S�̂̍��E�ɗ]�� */
+	/* 全体の左右に余白 */
 	.wrapper {
 		margin: 0 15px;
 	}
-	/* ���S�������߂� */
+	/* ロゴを小さめに */
 	.logo {
 		margin: 30px 0;
 	}
@@ -142,18 +150,18 @@ img {
 		width: 200px;
 	}	
 	
-	/* ���o��h2�������߂� */
+	/* 見出しh2を小さめに */
 	h2 {
 		font-size: 20px;
 	}
 
-	/* ���o��h3�������߂� */
+	/* 見出しh3を小さめに */
 	h3 {
 		font-size: 16px;
 	}
 
 	
-	/* �e�L�X�g�̉�荞�݂����� */
+	/* テキストの回り込みを解除 */
 	.shop-photo {
 		float: none;
 		padding: 0;
@@ -161,6 +169,7 @@ img {
 	.clear {
 		clear: none;
 	}
+
 
 
 }
