@@ -2,7 +2,7 @@
 
 /* 基本設定 */
 html {
-	font-family: "Zen Kaku Gothic New";
+	font-family: sans-serif;
 }
 
 html * {
@@ -16,6 +16,13 @@ html * {
   font-style: normal;
 }
 
+.hachi-maru-pop-regular {
+  font-family: "Hachi Maru Pop", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 
 /* ページ全体の設定 */
 body {
@@ -23,7 +30,6 @@ body {
 	background-color: #eeece9;	/* 背景色 */
 	color:	#000000;		/* 文字の色 */
 	margin:	0 0 0 0;		/* 余白（変えなくてよい） */
-	font-family: "Zen Kaku Gothic New";
 }
 
 .wrapper {
@@ -55,6 +61,7 @@ h3 {
 /* 本文 */
 p {
 	line-height: 1.6;		/* 本文の行間 */;
+	font-family: "Hachi Maru Pop"
 }
 
 
